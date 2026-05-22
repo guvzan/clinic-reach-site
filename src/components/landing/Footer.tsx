@@ -1,4 +1,5 @@
-import { Phone, Send, Facebook, MessageCircle } from "lucide-react";
+import { Phone, Send, MessageCircle } from "lucide-react";
+import { FacebookIcon } from "@/components/icons/FacebookIcon";
 
 export function Footer() {
   return (
@@ -32,7 +33,7 @@ export function Footer() {
             {[
               { i: Send, h: "https://t.me/yourhandle", l: "Telegram" },
               { i: MessageCircle, h: "viber://chat?number=%2B380000000000", l: "Viber" },
-              { i: Facebook, h: "https://facebook.com/yourpage", l: "Facebook" },
+              { i: FacebookIcon, h: "https://facebook.com/yourpage", l: "Facebook" },
             ].map((s) => (
               <a key={s.l} href={s.h} aria-label={s.l} className="w-10 h-10 grid place-items-center rounded-full bg-background/10 hover:bg-background/20 transition">
                 <s.i className="w-4 h-4" />

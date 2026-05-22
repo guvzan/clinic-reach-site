@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Phone, Copy, Check, Send, MessageCircle, Facebook, MapPin } from "lucide-react";
+import { Phone, Copy, Check, Send, MessageCircle, MapPin } from "lucide-react";
+import { FacebookIcon } from "@/components/icons/FacebookIcon";
 
 const PHONE = "+380 (00) 000 00 00";
 const PHONE_TEL = "+380000000000";
@@ -18,7 +19,7 @@ export function Contact() {
   const socials = [
     { label: "Telegram", icon: Send, href: "https://t.me/yourhandle", color: "oklch(0.6 0.14 240)" },
     { label: "Viber", icon: MessageCircle, href: "viber://chat?number=%2B380000000000", color: "oklch(0.55 0.17 295)" },
-    { label: "Facebook", icon: Facebook, href: "https://facebook.com/yourpage", color: "oklch(0.5 0.16 260)" },
+    { label: "Facebook", icon: FacebookIcon, href: "https://facebook.com/yourpage", color: "oklch(0.5 0.16 260)" },
   ];
 
   return (
