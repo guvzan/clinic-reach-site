@@ -1,5 +1,5 @@
 import { Phone, CalendarCheck, ShieldCheck, Sparkles } from "lucide-react";
-import doctorPortrait from "@/assets/doctor-portrait.jpg";
+import doctorPortrait from "@/assets/doctor-portrait-real.png";
 
 export function Hero() {
   return (
@@ -15,7 +15,7 @@ export function Hero() {
             Турбота про вашу <em className="not-italic text-primary">нервову систему</em> — з увагою до кожного симптому
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Анна Сергіївна Мельник — лікар-невролог із 21-річним досвідом.
+            Алла Анатоліївна Говзан — лікар-невролог із 21-річним досвідом.
             Консультації, точна діагностика та персональний план лікування. Можливий огляд вдома.
           </p>
 
@@ -28,18 +28,18 @@ export function Hero() {
               Записатись на прийом
             </a>
             <a
-              href="tel:+380000000000"
+              href="tel:+380972490514"
               className="inline-flex items-center gap-2.5 bg-surface-elevated border border-border text-foreground px-6 py-4 rounded-full font-medium shadow-soft hover:bg-secondary transition"
             >
               <Phone className="w-5 h-5 text-primary" />
-              +380 (00) 000 00 00
+              +380 (97) 249 05 14
             </a>
           </div>
 
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
             {[
               { k: "21", v: "рік практики" },
-              { k: "вища", v: "категорія" },
+              { k: "Вища", v: "категорія" },
               { k: "100%", v: "індивідуально" },
             ].map((s) => (
               <div key={s.v}>
@@ -55,7 +55,7 @@ export function Hero() {
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-primary opacity-10 blur-2xl" />
             <img
               src={doctorPortrait}
-              alt="Лікар-невролог Анна Мельник"
+              alt="Лікар-невролог Алла Говзан"
               width={1024}
               height={1280}
               className="relative w-full h-full object-cover rounded-[2rem] shadow-elevated border border-border/60"

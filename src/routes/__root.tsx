@@ -72,16 +72,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Анна Мельник — лікар-невролог вищої категорії" },
-      { name: "description", content: "Лікар-невролог Анна Сергіївна Мельник. 21 рік досвіду. Запис на консультацію, лікування головного болю, неврологічних розладів." },
-      { name: "author", content: "Анна Мельник" },
-      { property: "og:title", content: "Анна Мельник — лікар-невролог вищої категорії" },
-      { property: "og:description", content: "Лікар-невролог Анна Сергіївна Мельник. 21 рік досвіду. Запис на консультацію, лікування головного болю, неврологічних розладів." },
+      { title: "Алла Говзан — лікар-невролог вищої категорії" },
+      { name: "description", content: "Лікар-невролог Алла Анатоліївна Говзан. 21 рік досвіду. Запис на консультацію, лікування головного болю, неврологічних розладів." },
+      { name: "author", content: "Алла Говзан" },
+      { property: "og:title", content: "Алла Говзан — лікар-невролог вищої категорії" },
+      { property: "og:description", content: "Лікар-невролог Алла Анатоліївна Говзан. 21 рік досвіду. Запис на консультацію, лікування головного болю, неврологічних розладів." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Анна Мельник — лікар-невролог вищої категорії" },
-      { name: "twitter:description", content: "Лікар-невролог Анна Сергіївна Мельник. 21 рік досвіду. Запис на консультацію, лікування головного болю, неврологічних розладів." },
+      { name: "twitter:title", content: "Алла Говзан — лікар-невролог вищої категорії" },
+      { name: "twitter:description", content: "Лікар-невролог Алла Анатоліївна Говзан. 21 рік досвіду. Запис на консультацію, лікування головного болю, неврологічних розладів." },
     ],
     links: [
       {

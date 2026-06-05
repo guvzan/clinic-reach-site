@@ -7,7 +7,7 @@ export function SiteHeader() {
         <a href="#top" className="flex items-center gap-2.5 group">
           <span className="grid place-items-center w-9 h-9 rounded-full bg-gradient-primary text-primary-foreground font-display text-base shadow-soft">А</span>
           <div className="leading-tight">
-            <p className="font-display text-base text-foreground">Анна Мельник</p>
+            <p className="font-display text-base text-foreground">Алла Говзан</p>
             <p className="text-[11px] text-muted-foreground tracking-wide uppercase">Лікар-невролог</p>
           </div>
         </a>
@@ -19,7 +19,7 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <a
-            href="tel:+380000000000"
+            href="tel:+380972490514"
             className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 px-3 py-2 rounded-full"
           >
             <Phone className="w-4 h-4" /> Подзвонити

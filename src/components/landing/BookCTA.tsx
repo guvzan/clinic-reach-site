@@ -23,7 +23,7 @@ export function BookCTA() {
 
             <div className="flex flex-col gap-3">
               <a
-                href="https://calendar.google.com"
+                href="https://calendar.app.google/YFbUCse2NyHNGMqo6"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex items-center justify-between gap-3 bg-white text-primary px-7 py-5 rounded-2xl font-medium shadow-cta hover:bg-white/95 transition"
@@ -35,7 +35,7 @@ export function BookCTA() {
                 <span aria-hidden className="text-2xl group-hover:translate-x-1 transition">→</span>
               </a>
               <a
-                href="tel:+380000000000"
+                href="tel:+380972490514"
                 className="inline-flex items-center justify-between gap-3 bg-white/10 backdrop-blur border border-white/25 px-7 py-5 rounded-2xl font-medium hover:bg-white/15 transition"
               >
                 <span className="flex items-center gap-3">

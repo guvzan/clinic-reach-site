@@ -1,12 +1,36 @@
 import { ArrowUpRight } from "lucide-react";
-import a1 from "@/assets/article-1.jpg";
-import a2 from "@/assets/article-2.jpg";
-import a3 from "@/assets/article-3.jpg";
+import a1 from "@/assets/article-1.png";
+import a2 from "@/assets/article-2.png";
+import a3 from "@/assets/article-3.png";
 
 const articles = [
-  { img: a1, tag: "Головний біль", title: "Мігрень: коли біль вимагає лікаря", excerpt: "Як відрізнити мігрень від звичайного головного болю та чому самолікування може зашкодити.", date: "12 травня 2026" },
-  { img: a2, tag: "Сон", title: "Якщо сон не приносить відпочинку", excerpt: "Найпоширеніші розлади сну — від безсоння до апное — та сучасні підходи до їх лікування.", date: "28 квітня 2026" },
-  { img: a3, tag: "Нейрореабілітація", title: "Відновлення після інсульту: перші кроки", excerpt: "Перші 90 днів критично важливі. Розповідаю про основні принципи реабілітації.", date: "14 квітня 2026" },
+  {
+    img: a1,
+    tag: "Біль у спині",
+    title: "Чому болить спина?",
+    excerpt:
+      "Причини болю в спині — від сидячої роботи до перенапруження м’язів. Як допомогти собі та коли варто звернутися до лікаря.",
+    date: "5 вересня 2021",
+    link: "https://www.facebook.com/share/p/1b8V9LZY1s/"
+  },
+  {
+    img: a2,
+    tag: "Остеохондроз",
+    title: "Остеохондроз чи «відкладення солей»?",
+    excerpt:
+      "Що таке остеохондроз насправді, чому «відкладення солей» — не медичний діагноз та як виникають остеофіти.",
+    date: "21 вересня 2021",
+    link: "https://www.facebook.com/share/p/1Crr9NCScr/"
+  },
+  {
+    img: a3,
+    tag: "Неврологія",
+    title: "Тунельні синдроми: чому німіють руки",
+    excerpt:
+      "Оніміння, затерпання та біль у руках можуть бути ознакою тунельного синдрому. Хто в групі ризику та коли потрібен невролог.",
+    date: "28 січня 2022",
+    link: "https://www.facebook.com/share/p/1GEL4Qh4HE/"
+  },
 ];
 
 export function Articles() {
@@ -15,7 +39,7 @@ export function Articles() {
       <div className="container-page">
         <div className="max-w-2xl">
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium">Статті лікаря</p>
-          <h2 className="mt-3 text-4xl md:text-5xl">Корисні матеріали від Анни Сергіївни</h2>
+          <h2 className="mt-3 text-4xl md:text-5xl">Корисні матеріали від Алли Анатоліївни</h2>
           <p className="mt-4 text-muted-foreground">Прості пояснення складних неврологічних тем — щоб ви могли краще розуміти своє здоров'я.</p>
         </div>
 
@@ -23,7 +47,7 @@ export function Articles() {
           {articles.map((a) => (
             <a
               key={a.title}
-              href="#"
+              href={a.link}
               className="group bg-surface-elevated rounded-3xl overflow-hidden border border-border shadow-soft hover:shadow-elevated transition flex flex-col"
             >
               <div className="aspect-[4/3] overflow-hidden bg-secondary">

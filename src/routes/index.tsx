@@ -13,7 +13,7 @@ import { Phone, CalendarCheck } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Анна Мельник — лікар-невролог вищої категорії | Запис на прийом" },
+      { title: "Алла Говзан — лікар-невролог вищої категорії | Запис на прийом" },
       { name: "description", content: "Лікар-невролог з 21-річним досвідом. Лікування головного болю, наслідків інсульту, розладів сну, невралгій. Консультації, можливий огляд вдома." },
     ],
   }),
@@ -28,7 +28,7 @@ function Index() {
         <Hero />
         <About />
         <Services />
-        <Reviews />
+        {/*<Reviews />*/}
         <Contact />
         <BookCTA />
         <Articles />
@@ -37,7 +37,7 @@ function Index() {
 
       {/* Mobile sticky CTA */}
       <div className="fixed bottom-3 inset-x-3 z-40 md:hidden flex gap-2">
-        <a href="tel:+380000000000" className="flex-1 inline-flex items-center justify-center gap-2 bg-surface-elevated border border-border text-foreground py-3.5 rounded-full font-medium shadow-elevated">
+        <a href="tel:+380972490514" className="flex-1 inline-flex items-center justify-center gap-2 bg-surface-elevated border border-border text-foreground py-3.5 rounded-full font-medium shadow-elevated">
           <Phone className="w-4 h-4 text-primary" /> Дзвінок
         </a>
         <a href="#book" className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground py-3.5 rounded-full font-medium shadow-cta">

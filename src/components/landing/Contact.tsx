@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Phone, Copy, Check, Send, MessageCircle, MapPin } from "lucide-react";
 import { FacebookIcon } from "@/components/icons/FacebookIcon";
 
-const PHONE = "+380 (00) 000 00 00";
-const PHONE_TEL = "+380000000000";
+const PHONE = "+380 (97) 249 05 14";
+const PHONE_TEL = "+380972490514";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
@@ -17,9 +17,9 @@ export function Contact() {
   };
 
   const socials = [
-    { label: "Telegram", icon: Send, href: "https://t.me/yourhandle", color: "oklch(0.6 0.14 240)" },
-    { label: "Viber", icon: MessageCircle, href: "viber://chat?number=%2B380000000000", color: "oklch(0.55 0.17 295)" },
-    { label: "Facebook", icon: FacebookIcon, href: "https://facebook.com/yourpage", color: "oklch(0.5 0.16 260)" },
+    { label: "Telegram", icon: Send, href: "https://t.me/Alla_hovzan", color: "oklch(0.6 0.14 240)" },
+    { label: "Viber", icon: MessageCircle, href: "viber://chat?number=%2B380972490514", color: "oklch(0.55 0.17 295)" },
+    { label: "Facebook", icon: FacebookIcon, href: "https://facebook.com/alla.govzan", color: "oklch(0.5 0.16 260)" },
   ];
 
   return (
@@ -73,14 +73,16 @@ export function Contact() {
           </a>
         </div>
 
-        <div className="rounded-3xl overflow-hidden border border-border shadow-soft bg-surface-elevated relative min-h-[420px]">
-          <div className="absolute top-4 left-4 z-10 inline-flex items-center gap-2 px-3 py-2 rounded-full bg-surface-elevated/95 backdrop-blur border border-border shadow-soft text-sm">
+        <div
+          className="rounded-3xl overflow-hidden border border-border shadow-soft bg-surface-elevated relative min-h-[420px]">
+          <div
+            className="absolute top-4 left-4 z-10 inline-flex items-center gap-2 px-3 py-2 rounded-full bg-surface-elevated/95 backdrop-blur border border-border shadow-soft text-sm">
             <MapPin className="w-4 h-4 text-primary" />
             м. Івано-Франківськ
           </div>
           <iframe
             title="Карта розташування"
-            src="https://www.google.com/maps?q=Ivano-Frankivsk&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.365521435855!2d24.6112827!3d48.870308099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c70076f53325%3A0xb159b9287cf90ac7!2z0JLQsNGIINCd0LXQstGA0L7Qu9C-0LM!5e0!3m2!1suk!2sua!4v1780654958662!5m2!1suk!2sua"
             className="w-full h-full min-h-[420px] border-0 grayscale-[20%]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
