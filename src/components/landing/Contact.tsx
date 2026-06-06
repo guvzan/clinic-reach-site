@@ -23,51 +23,58 @@ export function Contact() {
   ];
 
   return (
-    <section id="contacts" className="py-24 md:py-32">
-      <div className="container-page grid lg:grid-cols-2 gap-10">
-        <div className="bg-surface-elevated border border-border rounded-3xl p-8 md:p-10 shadow-soft">
-          <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium">Контакти</p>
-          <h2 className="mt-3 text-3xl md:text-4xl">Зв'яжіться зручним способом</h2>
-          <p className="mt-3 text-muted-foreground">Зателефонуйте або напишіть у месенджер — відповім якнайшвидше.</p>
+    <section id="contacts" className="py-24 md:py-32 overflow-x-hidden">
+      <div className="container-page px-4 sm:px-6 grid lg:grid-cols-2 gap-10">   {/* ← Added padding */}
 
-          <div className="mt-8 rounded-2xl border border-border bg-gradient-soft p-5 flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3 min-w-0">
-              <div className="w-12 h-12 rounded-xl bg-gradient-primary text-primary-foreground grid place-items-center shadow-cta shrink-0">
+        {/* Contact Info Column */}
+        <div className="bg-surface-elevated border border-border rounded-3xl p-6 sm:p-8 md:p-10 shadow-soft">
+
+          {/* ... heading and description stay the same ... */}
+
+          {/* Phone row - improved mobile */}
+          <div
+            className="mt-8 rounded-2xl border border-border bg-gradient-soft p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-3 min-w-0 flex-1">
+              <div
+                className="w-12 h-12 rounded-xl bg-gradient-primary text-primary-foreground grid place-items-center shadow-cta shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
               <div className="min-w-0">
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Телефон</p>
-                <a href={`tel:${PHONE_TEL}`} className="font-display text-xl md:text-2xl text-foreground truncate block">{PHONE}</a>
+                <a href={`tel:${PHONE_TEL}`}
+                   className="font-display text-xl md:text-2xl text-foreground truncate block">
+                  {PHONE}
+                </a>
               </div>
             </div>
+
             <button
               onClick={copyPhone}
               aria-label="Скопіювати номер"
-              className="inline-flex items-center gap-1.5 text-sm font-medium px-3.5 py-2 rounded-full border border-border bg-surface-elevated hover:bg-secondary transition shrink-0"
+              className="inline-flex items-center gap-1.5 text-sm font-medium px-3.5 py-2 rounded-full border border-border bg-surface-elevated hover:bg-secondary transition shrink-0 w-full sm:w-auto"
             >
               {copied ? <Check className="w-4 h-4 text-primary" /> : <Copy className="w-4 h-4" />}
               {copied ? "Скопійовано" : "Копіювати"}
             </button>
           </div>
 
-          <div className="mt-4 grid grid-cols-3 gap-3">
+          {/* Socials - better mobile grid */}
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
             {socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noreferrer"
-                className="flex flex-col items-center justify-center gap-2 py-5 rounded-2xl border border-border bg-surface-elevated hover:shadow-elevated hover:-translate-y-0.5 transition shadow-soft"
-              >
-                <span className="w-10 h-10 rounded-full grid place-items-center" style={{ background: s.color, color: "white" }}>
-                  <s.icon className="w-5 h-5" />
-                </span>
+              <a key={s.label} href={s.href} target="_blank" rel="noreferrer"
+                 className="flex flex-col items-center justify-center gap-2 py-5 rounded-2xl border border-border bg-surface-elevated hover:shadow-elevated hover:-translate-y-0.5 transition shadow-soft text-center">
+            <span className="w-10 h-10 rounded-full grid place-items-center"
+                  style={{ background: s.color, color: "white" }}>
+              <s.icon className="w-5 h-5" />
+            </span>
                 <span className="text-sm text-foreground">{s.label}</span>
               </a>
             ))}
           </div>
 
-          <a href={`tel:${PHONE_TEL}`} className="mt-6 w-full inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground py-4 rounded-2xl font-medium shadow-cta hover:opacity-95 transition">
+          {/* Call button */}
+          <a href={`tel:${PHONE_TEL}`}
+             className="mt-8 w-full inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground py-4 rounded-2xl font-medium shadow-cta hover:opacity-95 transition">
             <Phone className="w-5 h-5" />
             Зателефонувати зараз
           </a>
