@@ -36,23 +36,23 @@ function Index() {
       <Footer />
 
       {/* Mobile sticky CTA */}
-      <div className="fixed bottom-3 left-3 right-3 z-40 md:hidden flex gap-2 box-border">
-        <a
-          href="tel:+380972490514"
-          className="flex-1 min-w-0 inline-flex items-center justify-center gap-2 bg-surface-elevated border border-border text-foreground py-3.5 rounded-full font-medium shadow-elevated"
-        >
-          <Phone className="w-4 h-4 shrink-0 text-primary" />
-          Дзвінок
-        </a>
+      {/*<div className="fixed bottom-3 left-3 right-3 z-40 md:hidden flex gap-2 box-border">*/}
+      {/*  <a*/}
+      {/*    href="tel:+380972490514"*/}
+      {/*    className="flex-1 min-w-0 inline-flex items-center justify-center gap-2 bg-surface-elevated border border-border text-foreground py-3.5 rounded-full font-medium shadow-elevated"*/}
+      {/*  >*/}
+      {/*    <Phone className="w-4 h-4 shrink-0 text-primary" />*/}
+      {/*    Дзвінок*/}
+      {/*  </a>*/}
 
-        <a
-          href="#book"
-          className="flex-1 min-w-0 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground py-3.5 rounded-full font-medium shadow-cta"
-        >
-          <CalendarCheck className="w-4 h-4 shrink-0" />
-          Запис
-        </a>
-      </div>
+      {/*  <a*/}
+      {/*    href="#book"*/}
+      {/*    className="flex-1 min-w-0 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground py-3.5 rounded-full font-medium shadow-cta"*/}
+      {/*  >*/}
+      {/*    <CalendarCheck className="w-4 h-4 shrink-0" />*/}
+      {/*    Запис*/}
+      {/*  </a>*/}
+      {/*</div>*/}
     </div>
   );
 }
